@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鹿野游吟</title>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      background-color: rgb(255, 255, 255)
+    }
+    /* *{
+      border:1px solid black;
+    } */
+    .yinying{
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;; 
+    }
+    .flex{
+      display: flex;
+    }
+    .baise{background-color: rgb(255, 255, 255);}
+    .huise{
+      background-color: #eee;
+    }
+    .flex1{
+      flex:1
+    }
+    .column{
+      flex-direction: column;
+    }
+    .mg8{margin: 8px;}
+    .mgr8{margin-right: 8px;}
+    .mgt8{margin-top: 8px;}
+    .p1{
+      font-size: 18px;
+    }
+    pp{
+      color: rgb(110, 110, 110);
+      top: 8px;
+      left: 16px;
+      font-size: 18px;
+      margin: 10px;
+    }
+
+    img {
+    max-width: 100%;
+    max-height: 100%;
+    }
+    .dx{
+      height: 100px;
+      overflow: hidden;
+    }
+    @media(max-width:600px){
+      .cebian{
+        width: 30%;
+        
+      }
+      .neiRong{
+        flex-direction: column;
+        
+      }
+      .liebiao{
+        height:200px;
+      }
+      .shuJuQu{
+        display: none;
+      }
+      .youQu{
+        margin-left:8px ;
+      }
+      .toubux{
+        font-size: 15px;
+        align-items:center;
+        justify-content: flex-start;
+        font-size: 25px;color:rgb(104, 104, 104)
+      }
+      .tx{
+        width: 100%;
+        height: 100%;
+      }
+      .xiaohaozi{
+        font-size: 14px;
+      }
+      .co{
+        height: 30px;
+      }
+    }
+    .toubud{
+      padding: 10px;
+      align-items:center;
+      justify-content: flex-start;
+      font-size: 25px;color:rgb(104, 104, 104)
+    }
+    
+    .lj{
+      font-size: 20px;
+    }
+    .bili{
+      width: 150px;
+      margin-left: 10px;
+      font-size: 20px;
+      color:rgb(127, 127, 127)
+    }
+    a:link{
+      Text-decoration:none;
+      color:rgb(131, 131, 131)
+    }
+    .cb{
+      width: 200px;
+    }
+    
+  </style>
+</head>
+<body class="flex">
+  <!--侧边栏-->
+  <div class="huise yinying  cebian ">
+    <!--头像栏-->
+    <div class=" yinying flex column" style="padding: 10px;align-items:center;justify-content:center">
+      <img class="tx"
+        src="images/erya.png" 
+        alt="头像" 
+        width="100px" 
+        height="100px"
+      />
+      <div class="mmgr" style="margin: 10px;">鹿野游吟</div>
+    </div>
+    <!--导航栏-->
+    <div class="flex1">
+      <div class="flex  column p1 xiaohaozi" style="align-items:center;margin: 8px;">
+        <p>她是裁云剪水大文豪</p>
+        <p>她是吃好喝好饕餮崽</p>
+        <p>她是节奏不对歌唱家</p>
+        <p>她是拔剑奶人好云梦</p>
+        <p>她是人间可爱小鹿其</p>
+      </div>
+    </div>
+  </div>
+  <!--主区域-->
+  <div class="flex flex1 column">
+    <!--头部栏-->
+    <div class=" yinying" style="z-index: 1;">
+      <div class="flex toubux toubud ">人间漫游的所见所闻</div>
+    </div>
+    <!--内容区-->
+    <div class="flex flex1 neiRong column" style="overflow:auto">
+      <!--左区-->
+      <div class="flex column mg8 " style="flex:3;">
+        <!--数据区-->
+        <div class=" flex shuJuQu ">
+          <!--数据块-->
+          <div class="a2 flex1 yinying mgr8  dx"> 
+            <div>
+              <img src="images/mkbk.jpg" art="玛卡巴卡">
+              
+            </div>
+          </div>
+          <!--数据块-->
+          <div class="a2 flex1 yinying mgr8  dx">
+            <div>
+              <img src="images/ygbg.jpg" art="依古比古">
+            </div>
+          </div>
+          <!--数据块-->
+          <div class="a2 flex1 yinying mgr8 dx">
+            <div>
+              <img src="images/wxdx.jpg" art="唔西迪西" > 
+            </div>
+          </div>
+          <!--数据块-->
+          <div class="a2 flex1 yinying dx ">
+            <div>
+              <img src="images/xdd.png" art="小点点">
+            </div>
+          </div>
+        </div>
+        <!--列表区-->
+        <div class="flex column ">
+          <!--列表项-->
+          <div class="flex baise yinying mgt8 co" style="height: 200px;">
+            <div class="flex">
+              <a href="https://www.bilibili.com/video/BV1JG411t7nf?spm_id_from=333.999.0.0" target="_blank">
+                <img src="./images/naima.jpg" art="奶妈" />
+              </a>
+              <p class="bili ">奶妈的神奇论剑方式</p>
+            </div>
+          </div>
+          <div class="flex baise yinying mgt8 co" style="height: 200px;">
+            <div class="flex">
+              <a href="https://www.bilibili.com/video/BV1Sa411o7KA?spm_id_from=333.999.0.0" target="_blank">
+                <img src="./images/tz.jpg" art="桃子" />
+              </a>
+              <p class="bili">和桃子认识的第一年【亲友纪念视频】</p>
+            </div>          
+          </div>
+          <div class="flex baise yinying mgt8 co" style="height: 200px;">
+            <div class="flex">
+              <a href="https://www.bilibili.com/video/BV1yU4y1Q7Hp?spm_id_from=333.999.0.0" target="_blank">
+                <img src="./images/dt.jpg" art="马宗" />
+              </a>
+              <p class="bili">第一次打马宗的大头</p>
+            </div>
+          </div>
+          <div class="flex baise yinying mgt8 co" style="height: 200px;">
+            <div class="flex">
+              <a href="https://www.bilibili.com/video/BV1a44y1L7fv?spm_id_from=333.999.0.0&vd_source=e4be871a06150e1db8f972f143cbe06c" target="_blank">
+                <img src="./images/jl.webp" art="金陵" />
+              </a>
+              <p class="bili">金陵奇妙会与你们</p>
+            </div>
+          </div>
+          <div class="flex baise yinying mgt8 co" style="height: 200px;">            
+            <div class="flex">
+              <a href="https://www.bilibili.com/video/BV1dF411v7iB?spm_id_from=333.999.0.0" target="_blank">
+                <img src="./images/dl.jpg" art="对联" />
+              </a>
+              <p class="bili">我是对联王（第一次被禁言的故事）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--右区-->
+      <div class="flex column youQu mgr8 mgt8" style="flex:1">
+        <!--提示区-->
+        <div class=" baise yinying" style="height: 350px;">
+          <!--头像栏-->
+          <div class=" huise yinying flex column" style="padding: 10px;align-items:center;justify-content:center">
+            <a href="https://alan23lee.github.io/Personal-Websites/" target="_blank">
+              <img src="images/goudan.png" alt="头像"/>
+            </a>
+            <a href="https://alan23lee.github.io/Personal-Websites/" target="_blank">
+              <div style="margin:10px;align-items: center;">点击进入狗蛋HGuo主页</div>
+            </a>
+          </div>
+        </div>
+        <!--消息区-->
+        <div class="flex column baise yinying mgt8" style="height: 300px">
+          <div class=" huise yinying flex column" style="align-items:center;justify-content:center">
+
+              <img src="images/erya和goudan.png" alt="头像"/>
+              <div class='bili' style="margin:10px;align-items: center;">erya&goudan</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
