@@ -8,7 +8,9 @@
     <meta name="Keywords" ceotent="jld大学 JLD大学 狗蛋HGuo 鹿其 jld goudan luqi goudanhguo">
     <title>JLD大学</title>
     <style>
-      body{margin: 0;}
+      body{
+        margin: 0;
+      }
 
             			/* 大屏幕（大桌面显示器，大于等于 1200px） */
       @media (min-width: 992px) {
@@ -47,10 +49,15 @@
       }
       .px10{margin:10px}
       .px5{margin:5px}
-      .huise
-      {
-        background-color:rgb(189, 189, 189) ;
-        opacity: 0.6}
+      .huise{background-color:rgba(189, 189, 189,0.6); }
+      .dj{
+        color: rgb(0, 0, 0);
+        height: 40px;
+        width: 300px;
+        background-color:rgb(230, 230, 230);
+        cursor:pointer;
+        border-style: none;
+      }
 
     </style>
   </head>
@@ -59,7 +66,7 @@
 
       <!--页眉-->
       <div class="center huise">
-        <div class=" center" style="margin:20px;" >
+        <div class=" center " style="margin:20px;" >
           <img src="images/goudan.png" width="150px" height="150px" alt="goudan">
         </div>
       </div>
@@ -78,6 +85,24 @@
           <p>守望先锋摸鱼玩家</p>
           <p>小学级的音乐选手</p>
           <p>非精英游泳运动员</p>
+          <div style="display:flex;
+      flex-direction:column;
+      align-items:center;">
+        <input class="dj" type="button" id="dianji" value="点击查看你的银行卡余额位数">
+        <script>
+          var number=0;
+          document.getElementById('dianji').onclick=function(){
+              this.value="你的银行卡余额位数("+(++number)+")";
+              if(number == 5){this.value="你的银行卡余额位数(5)——攒点小钱！"};
+              if(number == 6){this.value="你的银行卡余额位数(6)——颇有家资！"};
+              if(number == 7){this.value="你的银行卡余额位数(7)——百万身家！"};
+              if(number == 8){this.value="你的银行卡余额位数(8)——千万富豪！"};
+              if(number == 9){this.value="你的银行卡余额位数(9)——亿万富翁！"};
+              if(number >= 10){this.value="你的银行卡余额位数("+(++number)+")——疯了吧你！"};
+          }
+          
+        </script>
+      </div>
           <hr>
           <p>
             学习资源↓
@@ -93,24 +118,23 @@
           <p>本页面根据元岛主界面制作</p>
           <p>欢迎大家加入元岛</p>
           <a href="https://www.midorg.com/" target="_blank">元岛</a><br>
-          <hr>
-         
         </div>
       </div>
-      <div class="center" style="padding: 10px;align-items:center;justify-content:center">
+      <div class="center huise" style="padding: 10px;align-items:center;justify-content:center">
         <a href="luyeyouyin.html">
           <img class="tx"
           src="images/erya.png" 
           alt="头像" 
-          width="200px" 
-          height="200px"
+          width="150px" 
+          height="150px"
         />
         </a>
         <a href="luyeyouyin.html">
           <div style="margin: 10px;">点击进入鹿其主页</div>
         </a>
       </div>
-      <div class="center huise" >
+      
+      <div class="center" >
         <a href="https://space.bilibili.com/3225657" target="_blank">狗蛋HGuo的bilibili</a>
       </div>
   </body>
